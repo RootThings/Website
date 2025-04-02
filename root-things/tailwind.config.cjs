@@ -1,0 +1,127 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./docs/.vitepress/**/*.{js,ts,vue}",
+    "./docs/**/*.md"
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // Material Design 3 Monet color system
+        primary: {
+          0: '#000000',
+          10: '#002115',
+          20: '#003828',
+          30: '#00513C',
+          40: '#006C51',
+          50: '#008867',
+          60: '#00A47F',
+          70: '#2ABF97',
+          80: '#53DCAF',
+          90: '#7AF8CA',
+          95: '#BAFFDE',
+          99: '#F4FFF7',
+          100: '#FFFFFF',
+        },
+        secondary: {
+          0: '#000000',
+          10: '#0B1D12',
+          20: '#203427',
+          30: '#364B3B',
+          40: '#4E6352',
+          50: '#677C6A',
+          60: '#809683',
+          70: '#9AB19D',
+          80: '#B5CCB8',
+          90: '#D2E9D3',
+          95: '#E0F7E0',
+          99: '#F6FFEE',
+          100: '#FFFFFF',
+        },
+        tertiary: {
+          0: '#000000',
+          10: '#1E1635',
+          20: '#332A4B',
+          30: '#4A4063',
+          40: '#61567B',
+          50: '#7A6D95',
+          60: '#9584B0',
+          70: '#B19CCC',
+          80: '#CDB5E9',
+          90: '#E9CFFF',
+          95: '#F6EDFF',
+          99: '#FFFBFF',
+          100: '#FFFFFF',
+        },
+        error: {
+          0: '#000000',
+          10: '#410002',
+          20: '#690005',
+          30: '#93000A',
+          40: '#BA1A1A',
+          50: '#DE3730',
+          60: '#FF5449',
+          70: '#FF897D',
+          80: '#FFB4AB',
+          90: '#FFDAD6',
+          95: '#FFEDEA',
+          99: '#FFFBFF',
+          100: '#FFFFFF',
+        },
+        neutral: {
+          0: '#000000',
+          10: '#191C1A',
+          20: '#2E312F',
+          30: '#444744',
+          40: '#5C5F5C',
+          50: '#757874',
+          60: '#8F918D',
+          70: '#AAACA7',
+          80: '#C6C7C3',
+          90: '#E2E3DF',
+          95: '#F0F1EC',
+          99: '#FBFDF8',
+          100: '#FFFFFF',
+        }
+      },
+      animation: {
+        'float': 'float 3s ease-in-out infinite',
+        'surface-appear': 'surface-appear 0.3s cubic-bezier(0.4, 0.0, 0.2, 1)',
+        'scale-in': 'scale-in 0.3s cubic-bezier(0.4, 0.0, 0.2, 1)',
+        'fade-in': 'fade-in 0.2s cubic-bezier(0.4, 0.0, 0.2, 1)',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        'surface-appear': {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        'scale-in': {
+          '0%': { transform: 'scale(0.8)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      borderRadius: {
+        'md3': '16px',
+        'md3-sm': '12px',
+        'md3-lg': '28px',
+        'md3-xl': '32px',
+      },
+      boxShadow: {
+        'md3-1': '0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15)',
+        'md3-2': '0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15)',
+        'md3-3': '0 4px 8px 3px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.3)',
+        'md3-4': '0 6px 10px 4px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.3)',
+        'md3-5': '0 8px 12px 6px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.3)',
+      }
+    },
+  },
+  plugins: [],
+} 

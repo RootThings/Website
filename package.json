@@ -1,0 +1,38 @@
+{
+  "name": "root-things",
+  "version": "1.0.0",
+  "description": "Premium resources for Android customization enthusiasts",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs/.vitepress/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSakshamSingla/root-things.git"
+  },
+  "keywords": [
+    "android",
+    "root",
+    "magisk",
+    "kernelsu",
+    "customization"
+  ],
+  "author": "TheSakshamSingla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheSakshamSingla/root-things/issues"
+  },
+  "homepage": "https://github.com/TheSakshamSingla/root-things#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.0.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.2",
+    "vitepress": "1.0.0-alpha.28",
+    "vue": "^3.2.47"
+  }
+} 
