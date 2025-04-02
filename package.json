@@ -28,7 +28,7 @@
   "homepage": "https://github.com/TheSakshamSingla/root-things#readme",
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.21",
     "gh-pages": "^6.0.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^4.1.1",
